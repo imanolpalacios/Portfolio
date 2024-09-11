@@ -166,4 +166,13 @@ input {                        /*no muestra el botón de menu */
         
         box-sizing: border-box
     }
+    #gorro{
+        width: 186px;
+        height: 186px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        top: 37%;
+        left:50%;
+    }
+    
 }
