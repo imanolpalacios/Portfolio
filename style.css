@@ -66,13 +66,22 @@ nav img{
     font-size: 1.5vw;
 }
 .text-box h1{
-    font-size: 40px;
+    font-size: 2.5vh;
+    font-size: 2.5vw;
 }
-@media(max-width: 700x){
-    .text-box h1{
-        font-size: 20px;
+@media(max-width: 700px){
+    #estudiotext{
+        font-size: 4vw;
+     }
+    .text-box {
+        font-size: 5vw;
     }
-}
+    .text-box h1{ 
+        font-size: 8vw;
+     }
+    
+    }
+
 
 
 
@@ -139,8 +148,7 @@ input {                        /*no muestra el botón de menu */
     top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
- }
-
+}
  #ima{
     width: 20%;
     position:fixed;
@@ -148,5 +156,14 @@ input {                        /*no muestra el botón de menu */
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
- }
- 
+}
+@media(max-width: 700px){
+    #ima{
+        width: 30%;
+        height:auto;
+        flex-shrink: 0;
+        border-radius: 186px;
+        
+        box-sizing: border-box
+    }
+}
