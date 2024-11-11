@@ -3,6 +3,9 @@
     padding: 0; 
     font-family: 'Poppins', sans-serif;
 }
+img{
+    width: 100%;
+}
 
 body {
     top: 0;
@@ -16,18 +19,6 @@ body {
     position: relative;
 }
 
-.text-box {
-    width: 90%;
-    color: white;
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    bottom: 30%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 1.5vh;
-    font-size: 1.5vw;
-}
 
 .text-box h1 {
     font-size: 2.5vh;
@@ -130,6 +121,7 @@ body {
 
 .git {
     width: 60px;
+    margin-right: 20px;
 }
 
 header {
@@ -139,24 +131,44 @@ header {
     height: 80px;
     padding: 0 2rem;
 }
-
-#ima {
-width: 20vw;
-    position: fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#ima{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+}
+.imafoto{
+display: flex;
+justify-content: center;
+margin-top: 10vh;
+
+}
+
+.gorrofoto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#gorro {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 
-#gorro {
-    width: 25vw;
-    box-sizing: border-box;
-    position: fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text-box {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-box h1 {
+    font-size: 3vw;
+}
+
+.text-box p {
+    font-size: 1.5vw;
 }
 
 
