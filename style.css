@@ -223,6 +223,9 @@ color: white;
     -o-filter: invert(100%) !important;
     -ms-filter: invert(100%) !important;
 }
+.dark-mode .footer{
+    color: black;
+}
 
 
 

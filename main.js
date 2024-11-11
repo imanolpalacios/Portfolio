@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         cerrar.style.display = "none";
     });
 });
-
+// Modo Oscuro
 const toggleModeButton = document.getElementById("toggleMode");
 const body = document.body;
 
