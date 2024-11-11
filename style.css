@@ -226,7 +226,9 @@ color: white;
 .dark-mode .footer{
     color: black;
 }
-
+.dark-mode #footer{
+    color: black;
+}
 
 
 
