@@ -170,7 +170,16 @@ margin-top: 10vh;
 .text-box p {
     font-size: 1.5vw;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+.footer{
+color: white;
 
+}
 
 /* Estilos para el botón de alternancia */
 #toggleMode {
@@ -220,3 +229,56 @@ margin-top: 10vh;
 
 
 
+/* Estilo para el formulario */
+.contact-form {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

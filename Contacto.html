@@ -29,17 +29,36 @@
 
     </header>
 <main>
-    <section class="gorrofoto"><img src="images/contact-mail.png" id="gorro" alt=""></section>
-    <div class="text-box">
-        <h1>Podes contactarme por acá</h1>
-        <p>Telefono: +541151168880</p>
-        <p>Mail: imanolpalacioss@gmail.com</p>
-    </div>
+
+  <!-- Formulario de contacto -->
+  <section class="contact-form">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <span id="nameError" class="error-message"></span>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo">
+        <span id="emailError" class="error-message"></span>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje"></textarea>
+        <span id="messageError" class="error-message"></span>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 </main>
 <footer>
-
+    <div class="footer">
+    <div>Uade</div>
+    <div>Diseño y Desarrollo Web, Primer año </div>
+    <div>"Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024"</div>
+    </div>
 </footer>
 <script src="main.js"></script>
+
     
     </body>
 </html>
