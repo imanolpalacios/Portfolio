@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0; 
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     top: 0;
     left: 0;
     min-height: 100vh;
@@ -14,10 +15,11 @@ body{
     background-size: cover;
     position: relative;
 }
-.text-box{
+
+.text-box {
     width: 90%;
     color: white;
-    position:fixed;
+    position: fixed;
     top: 70%;
     left: 50%;
     bottom: 30%;
@@ -26,59 +28,13 @@ body{
     font-size: 1.5vh;
     font-size: 1.5vw;
 }
-.text-box h1{
+
+.text-box h1 {
     font-size: 2.5vh;
     font-size: 2.5vw;
 }
-@media(max-width: 700px){
-    #estudiotext{
-        font-size: 4vw;
-     }
-    .text-box {
-        font-size: 5vw;
-    }
-    .text-box h1{ 
-        font-size: 8vw;
-     }
-    
-    }
- #gorro{
-    width: 20%;
-    position:fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- #ima{
-    width: 20%;
-    position:fixed;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-@media(max-width: 700px){
-    #ima{
-        width: 186px;
-        height: 186px;
-        flex-shrink: 0;
-        border-radius: 186px;
-        
-        box-sizing: border-box
-    }
-    #gorro{
-        width: 186px;
-        height: 186px;
-        flex-shrink: 0;
-        box-sizing: border-box;
-        top: 37%;
-        left:50%;
-    }
-    
-}
 
 
-/* Menu Hamburguesa */
 .nav-list {
     list-style-type: none;
     display: flex;
@@ -87,16 +43,41 @@ body{
 
 .nav-list li a {
     color: white;
+    text-decoration: none; 
+    position: relative;
 }
 
-.abrir-menu,
-.cerrar-menu {
+.nav-list li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px; 
+    background: grey;
+    transition: width 0.5s ease; 
+}
+
+.nav-list li a:hover::after {
+    width: 100%; 
+}
+
+.nav-list-hover {
+    position: relative;
+    display: inline-block;
+    color: #000; 
+    text-decoration: none;
+}
+
+
+
+/* Menu Hamburguesa */
+.abrir-menu, .cerrar-menu {
     display: none;
 }
 
-@media screen and (max-width: 740px) {
-    .abrir-menu,
-    .cerrar-menu {
+@media (max-width: 740px) {
+    .abrir-menu, .cerrar-menu {
         display: block;
         border: 0;
         font-size: 1.25rem;
@@ -134,7 +115,7 @@ body{
         z-index: 1;
         background-color: rgb(43, 42, 42);
     }
-    
+
     .nav-list {
         flex-direction: column;
         align-items: end;
@@ -145,12 +126,12 @@ body{
         text-decoration: none;
     }
 }
-/* HEADER */
+
 
 .git {
     width: 60px;
 }
-  
+
 header {
     display: flex;
     align-items: center;
@@ -159,6 +140,68 @@ header {
     padding: 0 2rem;
 }
 
+#ima {
+width: 20vw;
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+#gorro {
+    width: 25vw;
+    box-sizing: border-box;
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para el botón de alternancia */
+#toggleMode {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: auto; /* Para que el menú de hamburguesa quede a la derecha */
+}
+
+#toggleMode:hover {
+    background-color: #555;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-image: url(images/fondoblanco.jpeg);
+    
+}
+
+/* Modo oscuro para los enlaces */
+.dark-mode .nav-list li a {
+    color: #000000;
+}
+
+.dark-mode .text-box {
+    color: #000000;
+}
+
+.dark-mode .git{
+    -webkit-filter: invert(100%) !important;
+    -moz-filter: invert(100%) !important;
+    -o-filter: invert(100%) !important;
+    -ms-filter: invert(100%) !important;
+}
+.dark-mode #gorro{
+    -webkit-filter: invert(100%) !important;
+    -moz-filter: invert(100%) !important;
+    -o-filter: invert(100%) !important;
+    -ms-filter: invert(100%) !important;
+}
 
 
 
